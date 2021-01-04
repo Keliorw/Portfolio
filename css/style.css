@@ -1,0 +1,2116 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+html, body {
+  height: 100%; }
+
+.MainLogo {
+  background-image: url(../img/logo.png);
+  width: 232px;
+  height: 57px; }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+@media (max-width: 450px) {
+  .MainLogo {
+    background-image: url(../img/logo-phone.png);
+    width: 156px;
+    height: 34px; } }
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; } }
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; } }
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; } }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; } }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important; }
+
+.Header {
+  height: 93px;
+  background-color: #2B2B2B;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .Header .container .phone {
+    display: none;
+    justify-content: space-between;
+    align-items: center; }
+    .Header .container .phone .button {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 35px;
+      height: 31px;
+      padding: 3px 0;
+      cursor: pointer; }
+      .Header .container .phone .button .line {
+        height: 3px;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 50px; }
+  .Header .container .desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .Header .container .desktop .Menu {
+      width: 303px;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .Header .container .desktop .Menu .registerButton {
+        width: 180px;
+        height: 30px;
+        background: #0071E3;
+        border-radius: 7px;
+        outline: none;
+        border: none;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 13px;
+        text-transform: uppercase;
+        color: #000000;
+        padding-top: 2px;
+        cursor: pointer; }
+        .Header .container .desktop .Menu .registerButton:hover {
+          background: #2391ff; }
+      .Header .container .desktop .Menu .loginButton {
+        background-color: #C4C4C4;
+        border-radius: 7px;
+        outline: none;
+        border: none;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 13px;
+        text-transform: uppercase;
+        color: #000000;
+        width: 88px;
+        height: 26px;
+        padding-top: 2px;
+        cursor: pointer; }
+        .Header .container .desktop .Menu .loginButton:hover {
+          background-color: #e4e4e4; }
+  .Header .container .NavMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 356px; }
+    .Header .container .NavMenu .Punkt:hover {
+      border-bottom: 2px solid #9C9C9C; }
+    .Header .container .NavMenu .Punkt a {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 18px;
+      text-align: center;
+      color: #FFFFFF;
+      border-bottom: none; }
+  .Header .container .Profile {
+    display: flex;
+    flex-direction: row;
+    height: 93px;
+    align-items: center;
+    width: 173px;
+    justify-content: space-around;
+    position: relative;
+    cursor: pointer; }
+    .Header .container .Profile:hover {
+      background-color: #242424; }
+    .Header .container .Profile .name p {
+      text-align: center;
+      width: 86px;
+      overflow: hidden;
+      white-space: nowrap;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      color: #C4C4C4; }
+    .Header .container .Profile .avatar {
+      height: 43px;
+      width: 43px;
+      border-radius: 100px;
+      background-size: cover;
+      display: block;
+      background-position: center; }
+    .Header .container .Profile .dropMenu {
+      position: absolute;
+      z-index: 10000;
+      top: -1500px;
+      width: 173px;
+      background-color: #2A2A2A; }
+      .Header .container .Profile .dropMenu .PunktMenu {
+        height: 36.5px;
+        display: flex;
+        align-items: center;
+        padding-left: 11px; }
+        .Header .container .Profile .dropMenu .PunktMenu:hover {
+          background-color: #454545; }
+        .Header .container .Profile .dropMenu .PunktMenu a {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+          text-align: center;
+          color: rgba(255, 255, 255, 0.8); }
+    .Header .container .Profile:hover .dropMenu {
+      top: 100%;
+      transition: 0.2s; }
+
+.wrapper {
+  position: relative;
+  min-height: 90.45%; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #2A2A2A; }
+  .footer .footerContant .computer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; }
+    .footer .footerContant .computer p {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 37px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-top: 63px; }
+  .footer .footerContant .phone {
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative; }
+    .footer .footerContant .phone .footerText {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 37px;
+      letter-spacing: 0.095em;
+      text-transform: uppercase;
+      color: #A4A4A4;
+      position: absolute;
+      top: 7px;
+      display: flex;
+      justify-content: center;
+      width: 100%; }
+
+@media (max-width: 992px) {
+  .Header {
+    background-color: #434343; }
+    .Header .container .desktop {
+      display: none; }
+
+  .Header .container .phone {
+    display: flex; }
+
+  .footer {
+    background-color: #434343; }
+
+  .footer .footerContant .phone {
+    display: flex; }
+
+  .footer .footerContant .computer {
+    display: none; } }
+.wrapper .content {
+  padding-bottom: 250px; }
+
+.container .mainBlock {
+  margin-left: 127px;
+  padding-top: 40px; }
+  .container .mainBlock .DeleteLinkChangePasswordText {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 24px;
+    color: #3a9200; }
+  .container .mainBlock .formRestorePassword {
+    display: flex;
+    flex-direction: column; }
+    .container .mainBlock .formRestorePassword .writeInfo {
+      margin-top: 30px;
+      outline: none;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      background: #1D1D1D;
+      border-radius: 10px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 30px;
+      width: 400px;
+      height: 52px;
+      padding-left: 13px;
+      color: white; }
+      .container .mainBlock .formRestorePassword .writeInfo input[placeholder] {
+        color: rgba(255, 255, 255, 0.5); }
+    .container .mainBlock .formRestorePassword .SendButton {
+      outline: none;
+      border: none;
+      border-radius: 24px;
+      background: #0071E3;
+      color: #ffffff;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 24px;
+      width: 292px;
+      height: 45px;
+      margin-top: 60px;
+      cursor: pointer; }
+  .container .mainBlock .headText p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    color: #FFFFFF; }
+  .container .mainBlock .formAuthorization {
+    display: flex;
+    flex-direction: column; }
+    .container .mainBlock .formAuthorization .writeInfo {
+      outline: none;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      background: #1D1D1D;
+      border-radius: 10px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 30px;
+      width: 400px;
+      height: 52px;
+      padding-left: 13px;
+      color: white; }
+      .container .mainBlock .formAuthorization .writeInfo input[placeholder] {
+        color: rgba(255, 255, 255, 0.5); }
+    .container .mainBlock .formAuthorization .BlockFormInput {
+      margin-top: 34.5px;
+      display: flex;
+      flex-direction: column; }
+      .container .mainBlock .formAuthorization .BlockFormInput p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300px;
+        font-size: 20px;
+        line-height: 27px;
+        color: rgba(58, 146, 0, 0.6); }
+    .container .mainBlock .formAuthorization .SendButton {
+      outline: none;
+      border: none;
+      border-radius: 24px;
+      background: #0071E3;
+      color: #ffffff;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 24px;
+      width: 342px;
+      height: 60px;
+      margin-top: 89px;
+      cursor: pointer; }
+    .container .mainBlock .formAuthorization .restorePassword {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 24px;
+      color: #0071E3;
+      width: 180px;
+      margin-top: 15px; }
+
+.ThankYouForRegister .container p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 24px;
+  color: #3a9200; }
+.ThankYouForRegister .container .content {
+  padding-top: 15px; }
+
+@media (max-width: 992px) {
+  .wrapper .content {
+    padding-bottom: 150px; }
+
+  .container .mainBlock {
+    margin-left: 0px; }
+    .container .mainBlock .headText p {
+      text-align: center; }
+    .container .mainBlock .formAuthorization {
+      align-items: center; }
+    .container .mainBlock .formRestorePassword {
+      align-items: center; } }
+@media (max-width: 576px) {
+  .container .mainBlock .headText p {
+    font-size: 30px;
+    line-height: 31px; }
+  .container .mainBlock .formRestorePassword .writeInfo {
+    width: 300px; }
+  .container .mainBlock .formRestorePassword .SendButton {
+    width: 192px; }
+  .container .mainBlock .formAuthorization .writeInfo {
+    width: 300px; }
+  .container .mainBlock .formAuthorization .SendButton {
+    width: 242px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 60px; } }
+.container .ProfileFon {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #262626; }
+  .container .ProfileFon .leftSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 86px;
+    width: 30%; }
+    .container .ProfileFon .leftSection .AvatarProfile {
+      width: 159px;
+      height: 159px;
+      border-radius: 100px;
+      background-size: cover;
+      background-position: center; }
+      .container .ProfileFon .leftSection .AvatarProfile p {
+        display: none;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        transition: 1s; }
+      .container .ProfileFon .leftSection .AvatarProfile:hover {
+        -webkit-box-shadow: inset 0px 0px 205px rgba(0, 0, 0, 0.8);
+        -moz-box-shadow: inset 0px 0px 205px rgba(0, 0, 0, 0.8);
+        box-shadow: inset 0px 0px 205px rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.5s; }
+        .container .ProfileFon .leftSection .AvatarProfile:hover p {
+          display: block; }
+    .container .ProfileFon .leftSection .ButtonChangeName {
+      margin-top: 24px; }
+      .container .ProfileFon .leftSection .ButtonChangeName .information {
+        margin-top: 10px;
+        width: 189px; }
+        .container .ProfileFon .leftSection .ButtonChangeName .information p {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 15px;
+          color: rgba(255, 255, 255, 0.7); }
+      .container .ProfileFon .leftSection .ButtonChangeName .ChangeName {
+        outline: none;
+        border: none;
+        background-color: #FEC652;
+        border-radius: 5px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        width: 189px;
+        height: 38px;
+        cursor: pointer;
+        transition: 0.5s; }
+        .container .ProfileFon .leftSection .ButtonChangeName .ChangeName:hover {
+          background-color: #f5ae21;
+          transition: 0.5s; }
+  .container .ProfileFon .rightSection {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    padding-right: 50px;
+    width: 70%; }
+    .container .ProfileFon .rightSection .ChengeNameUserForm {
+      display: none;
+      flex-direction: column;
+      margin-top: 47px; }
+      .container .ProfileFon .rightSection .ChengeNameUserForm .BackChangeName {
+        outline: none;
+        border: none;
+        margin-top: 14px;
+        background-color: #474747;
+        border-radius: 5px;
+        width: 164px;
+        height: 27px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: rgba(255, 255, 255, 0.8);
+        cursor: pointer; }
+        .container .ProfileFon .rightSection .ChengeNameUserForm .BackChangeName:hover {
+          background: #313030; }
+      .container .ProfileFon .rightSection .ChengeNameUserForm .form {
+        display: flex;
+        flex-direction: column; }
+        .container .ProfileFon .rightSection .ChengeNameUserForm .form .ChangeNameInput {
+          outline: none;
+          border: none;
+          border-radius: 5px;
+          background-color: #202020;
+          width: 379px;
+          height: 30px;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 25px;
+          line-height: 30px;
+          padding-left: 6px;
+          color: white; }
+        .container .ProfileFon .rightSection .ChengeNameUserForm .form .SaveButton {
+          margin-top: 36px;
+          outline: none;
+          border: none;
+          border-radius: 5px;
+          background: #474747;
+          width: 164px;
+          height: 27px;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 22px;
+          color: rgba(255, 255, 255, 0.8);
+          cursor: pointer; }
+          .container .ProfileFon .rightSection .ChengeNameUserForm .form .SaveButton:hover {
+            background: #313030; }
+    .container .ProfileFon .rightSection .headerTextProfile p {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 45px;
+      line-height: 55px;
+      color: rgba(255, 255, 255, 0.7);
+      overflow: hidden;
+      white-space: nowrap; }
+    .container .ProfileFon .rightSection .StatsPlayerInProfile {
+      margin-top: 23px; }
+      .container .ProfileFon .rightSection .StatsPlayerInProfile h1 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 33px;
+        line-height: 36px;
+        letter-spacing: 0.055em;
+        text-decoration: underline;
+        color: rgba(255, 255, 255, 0.7); }
+      .container .ProfileFon .rightSection .StatsPlayerInProfile .Stats {
+        height: 156px;
+        margin-top: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; }
+        .container .ProfileFon .rightSection .StatsPlayerInProfile .Stats p {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 24px;
+          color: rgba(255, 255, 255, 0.7); }
+  .container .ProfileFon .fonUploadsAvatar {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(22, 22, 22, 0.9);
+    align-items: center;
+    justify-content: center; }
+    .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionOne {
+      background: #D8D8D8;
+      box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+      width: 821px;
+      padding: 19px 0px 18px 22px; }
+      .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionOne p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.6); }
+    .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSaveAvatar {
+      display: none;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background: #ECECEC;
+      padding: 28px 0px 53px 0px; }
+      .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSaveAvatar .MainText p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.8);
+        text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.25); }
+      .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSaveAvatar .ViewAvatar {
+        width: 159px;
+        height: 159px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 100px;
+        margin-top: 32px; }
+      .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSaveAvatar .buttonSaveAndBack {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        width: 420px;
+        margin-top: 48.2px; }
+        .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSaveAvatar .buttonSaveAndBack .buttonSave .Save {
+          outline: none;
+          border: none;
+          background-color: #2E76BF;
+          width: 224px;
+          height: 36px;
+          border-radius: 6px;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          color: #FFFFFF;
+          cursor: pointer; }
+          .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSaveAvatar .buttonSaveAndBack .buttonSave .Save:hover {
+            background-color: #0461bd; }
+      .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSaveAvatar .buttonBack .DontSave {
+        outline: none;
+        border: none;
+        background-color: #DADADA;
+        width: 166px;
+        height: 36px;
+        border-radius: 6px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: rgba(0, 0, 0, 0.6);
+        cursor: pointer; }
+        .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSaveAvatar .buttonBack .DontSave:hover {
+          background-color: #80cbce; }
+    .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSendAvatar {
+      background: #ECECEC;
+      padding: 37px 0px 31px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSendAvatar .MainText p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.8);
+        text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.25); }
+      .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSendAvatar .AvatarChange {
+        margin-top: 30px; }
+      .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSendAvatar .buttonSendAvatar .ButtonUploadAvatar {
+        width: 211px;
+        height: 42px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: 0;
+        cursor: pointer; }
+      .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSendAvatar .buttonSendAvatar .ButtonUploadAvatar + label {
+        width: 211px;
+        height: 42px;
+        font-size: 22px;
+        padding: 9px 30px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        background: #2E76BF;
+        display: inline-block;
+        border-radius: 7px;
+        transition: 1s; }
+      .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSendAvatar .buttonSendAvatar .ButtonUploadAvatar:focus + label,
+      .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSendAvatar .buttonSendAvatar .ButtonUploadAvatar + label:hover {
+        background: #083766;
+        transition: 1s; }
+    .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionThree {
+      background: #D8D8D8;
+      width: 821px;
+      padding: 9px 0px 9px 22px; }
+      .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionThree p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.6); }
+
+@media (max-width: 992px) {
+  .container .ProfileFon {
+    flex-direction: column;
+    align-items: center; }
+    .container .ProfileFon .leftSection {
+      padding-top: 15px;
+      padding-bottom: 20px; }
+      .container .ProfileFon .leftSection .ButtonChangeName {
+        margin-top: 18px; }
+    .container .ProfileFon .rightSection {
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 15px; }
+      .container .ProfileFon .rightSection .ChengeNameUserForm {
+        align-items: center;
+        margin-top: 40px; }
+        .container .ProfileFon .rightSection .ChengeNameUserForm .form {
+          align-items: center; }
+      .container .ProfileFon .rightSection .headerTextProfile p {
+        text-align: center;
+        font-size: 25px;
+        line-height: 30px;
+        overflow: auto;
+        white-space: normal; }
+      .container .ProfileFon .rightSection .StatsPlayerInProfile {
+        margin-top: 23px; }
+        .container .ProfileFon .rightSection .StatsPlayerInProfile h1 {
+          text-align: center;
+          font-size: 25px;
+          line-height: 30px; }
+        .container .ProfileFon .rightSection .StatsPlayerInProfile .Stats {
+          align-items: center; }
+          .container .ProfileFon .rightSection .StatsPlayerInProfile .Stats p {
+            text-align: center;
+            font-size: 15px;
+            line-height: 18px; }
+    .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionOne {
+      width: 550px; }
+      .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionOne p {
+        font-size: 20px;
+        line-height: 23px; }
+    .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSaveAvatar .MainText p {
+      font-size: 15px;
+      line-height: 18px; }
+    .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSaveAvatar .ViewAvatar {
+      margin-top: 20px; }
+    .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSaveAvatar .buttonSaveAndBack {
+      width: 320px;
+      margin-top: 30px; }
+      .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSaveAvatar .buttonSaveAndBack .buttonSave .Save {
+        width: 174px;
+        height: 24px;
+        font-size: 10px;
+        line-height: 13px; }
+    .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSaveAvatar .buttonBack .DontSave {
+      height: 24px;
+      width: 116px;
+      font-size: 10px;
+      line-height: 13px; }
+    .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSendAvatar .MainText p {
+      font-size: 15px;
+      line-height: 18px; }
+    .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSendAvatar .AvatarChange {
+      margin-top: 20px; }
+    .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSendAvatar .buttonSendAvatar .ButtonUploadAvatar {
+      width: 151px;
+      height: 32px; }
+    .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSendAvatar .buttonSendAvatar .ButtonUploadAvatar + label {
+      width: 151px;
+      height: 32px;
+      font-size: 12px;
+      line-height: 15px; }
+    .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionThree {
+      width: 550px; }
+      .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionThree p {
+        font-size: 15px;
+        line-height: 18px; } }
+@media (max-width: 576px) {
+  .container .ProfileFon .rightSection .ChengeNameUserForm .form .ChangeNameInput {
+    width: 250px; }
+  .container .ProfileFon .rightSection .headerTextProfile p {
+    font-size: 20px;
+    line-height: 25px; }
+  .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionOne {
+    width: 300px; }
+    .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionOne p {
+      font-size: 10px;
+      line-height: 13px; }
+  .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSaveAvatar .MainText p {
+    font-size: 10px;
+    line-height: 13px; }
+  .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSaveAvatar .buttonSaveAndBack {
+    width: 220px; }
+    .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSaveAvatar .buttonSaveAndBack .buttonSave .Save {
+      width: 114px;
+      font-size: 8px;
+      line-height: 8px; }
+  .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSaveAvatar .buttonBack .DontSave {
+    width: 66px;
+    font-size: 8px;
+    line-height: 8px; }
+  .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSendAvatar .MainText p {
+    font-size: 10px;
+    line-height: 13px; }
+  .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSendAvatar .buttonSendAvatar .ButtonUploadAvatar {
+    width: 151px;
+    height: 32px; }
+  .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionTwoSendAvatar .buttonSendAvatar .ButtonUploadAvatar + label {
+    width: 151px;
+    height: 32px;
+    font-size: 12px;
+    line-height: 15px; }
+  .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionThree {
+    width: 300px; }
+    .container .ProfileFon .fonUploadsAvatar .windowUploadsAvatar .sectionThree p {
+      font-size: 10px;
+      line-height: 13px; } }
+.container .AllSection {
+  display: flex;
+  flex-direction: row;
+  padding-top: 56px; }
+  .container .AllSection .MainLeftBlock {
+    width: 30%; }
+    .container .AllSection .MainLeftBlock .allRatingPeople {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 306px;
+      height: 132px;
+      background-color: #323232;
+      padding: 9px 21px 15px 14px;
+      border-radius: 6px; }
+      .container .AllSection .MainLeftBlock .allRatingPeople .leftBlock {
+        display: flex;
+        flex-direction: column; }
+        .container .AllSection .MainLeftBlock .allRatingPeople .leftBlock .MainText p {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 22px;
+          color: #FFFFFF; }
+        .container .AllSection .MainLeftBlock .allRatingPeople .leftBlock .StatsTopThree {
+          margin-top: 16px; }
+          .container .AllSection .MainLeftBlock .allRatingPeople .leftBlock .StatsTopThree .rating-text {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 18px;
+            color: #FFFFFF; }
+            .container .AllSection .MainLeftBlock .allRatingPeople .leftBlock .StatsTopThree .rating-text:hover {
+              text-decoration: underline; }
+      .container .AllSection .MainLeftBlock .allRatingPeople .rightBlock {
+        display: flex;
+        flex-direction: column; }
+        .container .AllSection .MainLeftBlock .allRatingPeople .rightBlock .MoreDetailsButton a {
+          text-decoration: none;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 15px;
+          color: #959595; }
+        .container .AllSection .MainLeftBlock .allRatingPeople .rightBlock .MoreDetailsButton:hover {
+          border-bottom: 1px solid #959595; }
+        .container .AllSection .MainLeftBlock .allRatingPeople .rightBlock .Image {
+          margin-top: 13px;
+          width: 75px;
+          height: 75px; }
+    .container .AllSection .MainLeftBlock .OfferBlock {
+      margin-top: 38px;
+      display: flex;
+      flex-direction: column;
+      width: 306px;
+      min-height: 139px;
+      padding: 11px 21px 14px 21px;
+      background-color: #323232;
+      border-radius: 6px; }
+      .container .AllSection .MainLeftBlock .OfferBlock .MainText p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        text-align: center; }
+      .container .AllSection .MainLeftBlock .OfferBlock .descriptionText {
+        margin-top: 10px; }
+        .container .AllSection .MainLeftBlock .OfferBlock .descriptionText p {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 15px;
+          color: #929292; }
+      .container .AllSection .MainLeftBlock .OfferBlock .formOffer {
+        display: flex;
+        flex-direction: row;
+        margin-top: 11px;
+        align-items: flex-end; }
+        .container .AllSection .MainLeftBlock .OfferBlock .formOffer .comment_text_hidden {
+          position: relative; }
+        .container .AllSection .MainLeftBlock .OfferBlock .formOffer #comment_text_hidden {
+          visibility: hidden;
+          position: absolute; }
+        .container .AllSection .MainLeftBlock .OfferBlock .formOffer .textarea_behavior {
+          width: 90%;
+          min-height: 26px;
+          border-radius: 6px 0px 0px 6px;
+          outline: none;
+          border: none;
+          background-color: #292929;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 22px;
+          color: #8F8F8F;
+          padding-left: 7px;
+          resize: none;
+          word-wrap: break-word;
+          overflow: hidden; }
+        .container .AllSection .MainLeftBlock .OfferBlock .formOffer .SendButton {
+          height: 44px;
+          display: flex;
+          align-items: center;
+          width: 10%;
+          border-radius: 0px 6px 6px 0px;
+          outline: none;
+          border: none;
+          background-color: #292929;
+          justify-content: center;
+          cursor: pointer; }
+          .container .AllSection .MainLeftBlock .OfferBlock .formOffer .SendButton img {
+            cursor: pointer; }
+          .container .AllSection .MainLeftBlock .OfferBlock .formOffer .SendButton:hover {
+            background-color: #0f0f0f; }
+  .container .AllSection .MainRightBlock {
+    width: 70%; }
+    .container .AllSection .MainRightBlock .CreateRoomFon {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(22, 22, 22, 0.9);
+      align-items: center;
+      justify-content: center; }
+      .container .AllSection .MainRightBlock .CreateRoomFon .MainBlockCreateRoom {
+        position: relative;
+        width: 330px;
+        min-height: 231px;
+        background-color: #2A2A2A;
+        display: flex;
+        flex-direction: column;
+        padding: 22px 24px 26px 24px; }
+        .container .AllSection .MainRightBlock .CreateRoomFon .MainBlockCreateRoom .CloseButton {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          cursor: pointer; }
+          .container .AllSection .MainRightBlock .CreateRoomFon .MainBlockCreateRoom .CloseButton img {
+            width: 18px;
+            height: 18px;
+            cursor: pointer; }
+        .container .AllSection .MainRightBlock .CreateRoomFon .MainBlockCreateRoom .descriptionText {
+          margin: 0 auto; }
+          .container .AllSection .MainRightBlock .CreateRoomFon .MainBlockCreateRoom .descriptionText p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 27px;
+            color: #FFFFFF; }
+        .container .AllSection .MainRightBlock .CreateRoomFon .MainBlockCreateRoom .MenuCreateAndWriteInformation .form {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .container .AllSection .MainRightBlock .CreateRoomFon .MainBlockCreateRoom .MenuCreateAndWriteInformation .form .WriteInformation {
+            display: flex;
+            flex-direction: column;
+            width: 100%; }
+            .container .AllSection .MainRightBlock .CreateRoomFon .MainBlockCreateRoom .MenuCreateAndWriteInformation .form .WriteInformation p {
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: 300;
+              font-size: 15px;
+              line-height: 18px;
+              color: rgba(58, 146, 0, 0.6); }
+            .container .AllSection .MainRightBlock .CreateRoomFon .MainBlockCreateRoom .MenuCreateAndWriteInformation .form .WriteInformation .InputCreateRoom {
+              width: 100%;
+              height: 46px;
+              margin-top: 23px;
+              background-color: #1B1B1B;
+              outline: none;
+              border: none;
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 15px;
+              line-height: 18px;
+              text-align: center;
+              letter-spacing: 0.055em;
+              color: #FFFFFF; }
+              .container .AllSection .MainRightBlock .CreateRoomFon .MainBlockCreateRoom .MenuCreateAndWriteInformation .form .WriteInformation .InputCreateRoom input[placeholder] {
+                color: rgba(0, 0, 0, 0.18); }
+          .container .AllSection .MainRightBlock .CreateRoomFon .MainBlockCreateRoom .MenuCreateAndWriteInformation .form .ButtonCreateRoomSend {
+            outline: none;
+            border: none;
+            margin-top: 26px;
+            border-radius: 5px;
+            background-color: #0071E3;
+            width: 215px;
+            height: 34px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            letter-spacing: 0.055em;
+            color: #000000;
+            cursor: pointer; }
+            .container .AllSection .MainRightBlock .CreateRoomFon .MainBlockCreateRoom .MenuCreateAndWriteInformation .form .ButtonCreateRoomSend:hover {
+              background-color: #5494d4; }
+    .container .AllSection .MainRightBlock .BlockShearchRoom {
+      width: 100%;
+      margin-left: 33px;
+      height: 440px;
+      display: flex;
+      flex-direction: column; }
+      .container .AllSection .MainRightBlock .BlockShearchRoom .CreateRoomAndMainText {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 2px solid #393939;
+        background-color: #323232;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 24px 0px 24px;
+        border-radius: 6px 6px 0px 0px;
+        height: 58px; }
+        .container .AllSection .MainRightBlock .BlockShearchRoom .CreateRoomAndMainText p {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 27px;
+          text-align: center;
+          color: #FFFFFF; }
+        .container .AllSection .MainRightBlock .BlockShearchRoom .CreateRoomAndMainText .buttonCreate {
+          cursor: pointer;
+          outline: none;
+          border: none;
+          background-color: #FFD785;
+          border-radius: 3px;
+          width: 117px;
+          height: 28.5px;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          color: #000000; }
+          .container .AllSection .MainRightBlock .BlockShearchRoom .CreateRoomAndMainText .buttonCreate:hover {
+            background-color: #f7c25a; }
+      .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch {
+        display: flex;
+        flex-direction: column;
+        background-color: #323232;
+        border-radius: 0px 0px 6px 6px;
+        padding: 19.5px 14px 37px 19px; }
+        .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .form {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start; }
+          .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .form .SendRequest {
+            outline: none;
+            border: none;
+            background-color: #292929;
+            height: 25px;
+            width: 5%; }
+          .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .form .TextRequest {
+            background-color: #292929;
+            height: 25px;
+            width: 85%;
+            outline: none;
+            border: none;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #ffffff; }
+            .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .form .TextRequest input[placeholder] {
+              color: rgba(255, 255, 255, 0.15); }
+        .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom {
+          margin-top: 17px;
+          max-height: 284px; }
+          .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .JoinRoomFon {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(22, 22, 22, 0.9);
+            align-items: center;
+            justify-content: center; }
+            .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .JoinRoomFon .MainBlockJoinRoom {
+              position: relative;
+              width: 330px;
+              min-height: 231px;
+              background-color: #2A2A2A;
+              display: flex;
+              flex-direction: column;
+              padding: 22px 24px 26px 24px; }
+              .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .JoinRoomFon .MainBlockJoinRoom .CloseButton {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                cursor: pointer; }
+                .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .JoinRoomFon .MainBlockJoinRoom .CloseButton img {
+                  width: 18px;
+                  height: 18px;
+                  cursor: pointer; }
+              .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .JoinRoomFon .MainBlockJoinRoom .descriptionText {
+                margin: 0 auto; }
+                .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .JoinRoomFon .MainBlockJoinRoom .descriptionText p {
+                  text-align: center;
+                  font-family: Montserrat;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 22px;
+                  line-height: 27px;
+                  color: #FFFFFF; }
+              .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .JoinRoomFon .MainBlockJoinRoom .MenuJoinAndWriteInformation .form {
+                display: flex;
+                flex-direction: column;
+                align-items: center; }
+                .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .JoinRoomFon .MainBlockJoinRoom .MenuJoinAndWriteInformation .form .InputJoinRoom {
+                  width: 100%;
+                  height: 46px;
+                  margin-top: 23px;
+                  background-color: #1B1B1B;
+                  outline: none;
+                  border: none;
+                  font-family: Montserrat;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 15px;
+                  line-height: 18px;
+                  text-align: center;
+                  letter-spacing: 0.055em;
+                  color: #FFFFFF; }
+                  .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .JoinRoomFon .MainBlockJoinRoom .MenuJoinAndWriteInformation .form .InputJoinRoom input[placeholder] {
+                    color: rgba(0, 0, 0, 0.18); }
+                .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .JoinRoomFon .MainBlockJoinRoom .MenuJoinAndWriteInformation .form .ButtonJoinRoomSend {
+                  outline: none;
+                  border: none;
+                  margin-top: 26px;
+                  border-radius: 5px;
+                  background-color: #0071E3;
+                  width: 215px;
+                  height: 34px;
+                  font-family: Montserrat;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 24px;
+                  line-height: 29px;
+                  letter-spacing: 0.055em;
+                  color: #000000;
+                  cursor: pointer; }
+                  .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .JoinRoomFon .MainBlockJoinRoom .MenuJoinAndWriteInformation .form .ButtonJoinRoomSend:hover {
+                    background-color: #5494d4; }
+          .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .ImageBeerGlass {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto; }
+            .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .ImageBeerGlass img {
+              width: 200px;
+              height: 200px; }
+          .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .ListRoom::-webkit-scrollbar {
+            background: #212121;
+            border-radius: 4px;
+            width: 7px; }
+          .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .ListRoom::-webkit-scrollbar-thumb {
+            background: #3E3E3E;
+            border-radius: 4px;
+            width: 7px; }
+          .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .ListRoom {
+            overflow-y: scroll;
+            width: 100%;
+            height: 284px; }
+            .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .ListRoom .Room {
+              margin-top: 16px;
+              width: 90%;
+              height: 84px;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              padding: 7px 29px 12px 29px;
+              background-color: #2A2A2A; }
+              .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .ListRoom .Room .BlockDescription {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; }
+                .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .ListRoom .Room .BlockDescription .NameRoom p {
+                  font-family: Montserrat;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 28px;
+                  line-height: 34px;
+                  color: #FFFFFF;
+                  text-decoration-line: underline; }
+                .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .ListRoom .Room .BlockDescription .AmountPlayer {
+                  display: flex;
+                  flex-direction: row;
+                  margin-top: 9px;
+                  align-items: center; }
+                  .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .ListRoom .Room .BlockDescription .AmountPlayer img {
+                    width: 16px;
+                    height: 16px; }
+                  .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .ListRoom .Room .BlockDescription .AmountPlayer p {
+                    margin-left: 6px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #FFFFFF; }
+              .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .ListRoom .Room .BlockButtonJoin .joinInRoom {
+                outline: none;
+                border: none;
+                width: 168px;
+                height: 51px;
+                background-color: #C4C4C4;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+                color: #000000;
+                cursor: pointer; }
+                .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .ListRoom .Room .BlockButtonJoin .joinInRoom:hover {
+                  background-color: #969696; }
+
+@media (max-width: 992px) {
+  .container .AllSection {
+    flex-direction: column;
+    padding-top: 20px; }
+    .container .AllSection .MainLeftBlock {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      .container .AllSection .MainLeftBlock .OfferBlock {
+        margin-top: 20px; }
+    .container .AllSection .MainRightBlock {
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      .container .AllSection .MainRightBlock .BlockShearchRoom {
+        margin-left: 0px; } }
+@media (max-width: 768px) {
+  .container .AllSection {
+    width: 100%; }
+    .container .AllSection .MainLeftBlock .OfferBlock {
+      width: 100%; }
+    .container .AllSection .MainLeftBlock .allRatingPeople {
+      width: 100%; }
+    .container .AllSection .MainRightBlock .BlockShearchRoom {
+      width: 100%; }
+      .container .AllSection .MainRightBlock .BlockShearchRoom .CreateRoomAndMainText {
+        padding: 0px 12px 0px 12px; }
+        .container .AllSection .MainRightBlock .BlockShearchRoom .CreateRoomAndMainText p {
+          font-size: 16px;
+          line-height: 18px; }
+        .container .AllSection .MainRightBlock .BlockShearchRoom .CreateRoomAndMainText .buttonCreate {
+          width: 105px; }
+      .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .form .SendRequest {
+        width: 10%; }
+      .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .form .TextRequest {
+        width: 80%; }
+      .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .JoinRoomFon {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(22, 22, 22, 0.9);
+        align-items: center;
+        justify-content: center; }
+        .container .AllSection .MainRightBlock .BlockShearchRoom .ListRoomAndShearch .BlockListRoom .JoinRoomFon .MainBlockJoinRoom {
+          width: 310px;
+          padding: 11px 12px 13px 12px; } }
+.ContanteRoom .container .HeaderTextRoom {
+  padding-top: 40px; }
+  .ContanteRoom .container .HeaderTextRoom p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+    text-align: center;
+    color: #FFFFFF; }
+.ContanteRoom .container .FirstSectionContanteRoom {
+  width: 100%;
+  margin-top: 74px;
+  display: flex;
+  flex-direction: row; }
+  .ContanteRoom .container .FirstSectionContanteRoom .LeftSection {
+    width: 20%;
+    height: 278px;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 15px 62px 15px; }
+    .ContanteRoom .container .FirstSectionContanteRoom .LeftSection .Image {
+      margin-top: 30px; }
+      .ContanteRoom .container .FirstSectionContanteRoom .LeftSection .Image img {
+        width: 106px;
+        height: 106px; }
+    .ContanteRoom .container .FirstSectionContanteRoom .LeftSection .InfoBlock {
+      display: flex;
+      flex-direction: column; }
+      .ContanteRoom .container .FirstSectionContanteRoom .LeftSection .InfoBlock .NameRoom {
+        width: 130px;
+        overflow: hidden;
+        white-space: nowrap; }
+        .ContanteRoom .container .FirstSectionContanteRoom .LeftSection .InfoBlock .NameRoom p {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 28px;
+          line-height: 34px;
+          text-decoration-line: underline;
+          color: #FFFFFF;
+          text-align: center; }
+      .ContanteRoom .container .FirstSectionContanteRoom .LeftSection .InfoBlock .AmountPlayerRoom {
+        margin-top: 6px; }
+        .ContanteRoom .container .FirstSectionContanteRoom .LeftSection .InfoBlock .AmountPlayerRoom p {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 22px;
+          color: #FFFFFF; }
+    .ContanteRoom .container .FirstSectionContanteRoom .LeftSection .DateBlock {
+      display: none;
+      flex-direction: column;
+      align-items: center; }
+      .ContanteRoom .container .FirstSectionContanteRoom .LeftSection .DateBlock .Imagekitchen img {
+        width: 38px;
+        height: 38px; }
+      .ContanteRoom .container .FirstSectionContanteRoom .LeftSection .DateBlock .date p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        font-feature-settings: "pnum" on, "onum" on;
+        color: #FFFFFF; }
+  .ContanteRoom .container .FirstSectionContanteRoom .rightSection {
+    width: 80%;
+    height: 278px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #2A2A2A;
+    padding: 23px 47px 27px 35px; }
+    .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ButtonLeaveRoom {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      background: none; }
+      .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ButtonLeaveRoom img {
+        width: 22px;
+        height: 22px; }
+    .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom::-webkit-scrollbar {
+      background: #212121;
+      border-radius: 4px;
+      width: 7px; }
+    .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom::-webkit-scrollbar-thumb {
+      background: #3E3E3E;
+      border-radius: 4px;
+      width: 7px; }
+    .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom {
+      padding-right: 30px;
+      overflow: auto;
+      width: 422px;
+      margin-right: 24px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 221px; }
+      .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom .player {
+        position: relative;
+        margin-top: 27px;
+        display: flex;
+        flex-direction: row;
+        width: 170px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #363636;
+        padding: 5px 7px 5px 7px;
+        cursor: pointer; }
+        .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom .player:first-child {
+          margin-top: 0px; }
+        .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom .player .dropMenu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          z-index: 500; }
+          .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom .player .dropMenu .PunktMenu {
+            width: 100%;
+            height: 38px;
+            background-color: #2A2A2A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer; }
+            .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom .player .dropMenu .PunktMenu a {
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 20px;
+              line-height: 23px;
+              color: #FFFFFF;
+              text-decoration-line: none; }
+            .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom .player .dropMenu .PunktMenu p {
+              font-family: Montserrat;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 20px;
+              line-height: 23px;
+              color: #FFFFFF; }
+        .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom .player .activeRoomMenu {
+          display: block; }
+        .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom .player .NamePlayer {
+          width: 80%;
+          display: flex;
+          flex-direction: row; }
+          .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom .player .NamePlayer p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 23px;
+            color: #FFFFFF; }
+          .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom .player .NamePlayer .Name {
+            width: 65%;
+            overflow: hidden;
+            white-space: nowrap;
+            cursor: pointer;
+            margin-right: 5px; }
+        .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom .player .avatar {
+          background-size: cover;
+          background-position: center;
+          border-radius: 100px;
+          width: 35px;
+          height: 35px; }
+      .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom .FirstColumn {
+        display: flex;
+        flex-direction: column; }
+      .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom .SecondColumn {
+        display: flex;
+        flex-direction: column; }
+.ContanteRoom .container .SecondSectionContanteRoom {
+  margin-top: 81px; }
+  .ContanteRoom .container .SecondSectionContanteRoom .HeaderText {
+    display: flex;
+    flex-direction: row; }
+    .ContanteRoom .container .SecondSectionContanteRoom .HeaderText img {
+      width: 29px;
+      height: 29px; }
+    .ContanteRoom .container .SecondSectionContanteRoom .HeaderText p {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 37px;
+      color: #FFFFFF;
+      margin-left: 6px; }
+  .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .adminPanel {
+    width: 100%;
+    min-height: 67px;
+    background-color: #2A2A2A;
+    display: flex;
+    justify-content: center; }
+    .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .adminPanel .StartGame {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto; }
+      .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .adminPanel .StartGame .Start {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 159px;
+        height: 28px;
+        padding: 0px 5px 0px 5px;
+        background-color: #FFD785;
+        cursor: pointer; }
+        .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .adminPanel .StartGame .Start img {
+          width: 18px;
+          height: 18px; }
+        .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .adminPanel .StartGame .Start p {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 11px;
+          line-height: 13px;
+          color: #000000; }
+    .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .adminPanel .PlayGame {
+      display: none;
+      width: 100%;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px 5px 0px 5px; }
+      .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .adminPanel .PlayGame .button {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 106px;
+        height: 28px;
+        background-color: #FFD785;
+        padding: 0px 5px 0px 5px; }
+        .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .adminPanel .PlayGame .button p {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 11px;
+          line-height: 13px;
+          color: #000000; }
+    .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .adminPanel .off {
+      display: none; }
+    .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .adminPanel .on {
+      display: flex; }
+  .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .off {
+    display: none; }
+  .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .FonFight {
+    margin-top: 20px;
+    width: 100%;
+    height: 67px;
+    background-color: #323232;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px 0px 16px; }
+    .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .FonFight:first-child {
+      margin-top: 14px; }
+    .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .FonFight .Player {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      min-width: 173px;
+      max-width: 250px;
+      justify-content: space-between; }
+      .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .FonFight .Player:first-child .avatar {
+        margin-right: 20px; }
+      .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .FonFight .Player:last-child .avatar {
+        margin-left: 20px; }
+      .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .FonFight .Player:last-child p {
+        text-align: right; }
+      .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .FonFight .Player .avatar {
+        background-position: center;
+        background-size: cover;
+        border-radius: 100px;
+        width: 50px;
+        height: 50px; }
+      .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .FonFight .Player p {
+        width: 180px;
+        overflow: hidden;
+        white-space: nowrap;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 41px;
+        color: #FFFFFF; }
+    .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .FonFight .StatusPlay p {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 35px;
+      color: #FFFFFF; }
+
+@media (max-width: 992px) {
+  .ContanteRoom .container {
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%; }
+    .ContanteRoom .container .HeaderTextRoom {
+      display: none; }
+    .ContanteRoom .container .FirstSectionContanteRoom {
+      margin-top: 0px;
+      padding-top: 33px;
+      flex-direction: column; }
+      .ContanteRoom .container .FirstSectionContanteRoom .LeftSection {
+        width: 100%;
+        height: 74px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 25px 0px 25px; }
+        .ContanteRoom .container .FirstSectionContanteRoom .LeftSection .Image {
+          display: none; }
+          .ContanteRoom .container .FirstSectionContanteRoom .LeftSection .Image img {
+            width: 106px;
+            height: 106px; }
+        .ContanteRoom .container .FirstSectionContanteRoom .LeftSection .InfoBlock .NameRoom p {
+          text-align: left; }
+        .ContanteRoom .container .FirstSectionContanteRoom .LeftSection .InfoBlock .AmountPlayerRoom {
+          margin-top: 6px; }
+          .ContanteRoom .container .FirstSectionContanteRoom .LeftSection .InfoBlock .AmountPlayerRoom p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF; }
+        .ContanteRoom .container .FirstSectionContanteRoom .LeftSection .DateBlock {
+          display: flex; }
+      .ContanteRoom .container .FirstSectionContanteRoom .rightSection {
+        width: 317px;
+        height: 281px;
+        background: none;
+        padding: 0px;
+        margin: 30px auto 0px auto; }
+        .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ButtonLeaveRoom {
+          display: none; }
+        .ContanteRoom .container .FirstSectionContanteRoom .rightSection .Image {
+          display: none; }
+        .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom::-webkit-scrollbar {
+          background: #141414;
+          width: 11px; }
+        .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom::-webkit-scrollbar-thumb {
+          width: 11px; }
+        .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom {
+          padding-right: 14px;
+          margin: 0px;
+          overflow-y: scroll;
+          width: 100%;
+          flex-direction: column;
+          justify-content: none;
+          height: 100%; }
+          .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom .player {
+            margin-top: 7px;
+            width: 292px;
+            background-color: #363636;
+            padding: 3px 11px 3px 11px; }
+        .ContanteRoom .container .FirstSectionContanteRoom .rightSection .SecondColumn {
+          margin-top: 7px; }
+    .ContanteRoom .container .SecondSectionContanteRoom {
+      margin-top: 34px; }
+      .ContanteRoom .container .SecondSectionContanteRoom .HeaderText {
+        padding-left: 13px; } }
+@media (max-width: 768px) {
+  .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .adminPanel .PlayGame .button {
+    width: 90px; }
+  .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .adminPanel .off {
+    display: none; }
+  .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .adminPanel .on {
+    display: flex; }
+  .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .off {
+    display: none; }
+  .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .FonFight {
+    margin-top: 9px;
+    height: 40px;
+    display: flex;
+    padding: 0px 10px 0px 10px; }
+    .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .FonFight:first-child {
+      margin-top: 11px; }
+    .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .FonFight .Player {
+      min-width: 100px;
+      max-width: 136px; }
+      .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .FonFight .Player:first-child .avatar {
+        margin-right: 7px; }
+      .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .FonFight .Player:last-child .avatar {
+        margin-left: 7px; }
+      .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .FonFight .Player .avatar {
+        width: 30px;
+        height: 30px; }
+      .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .FonFight .Player p {
+        width: 90px;
+        font-size: 17px;
+        line-height: 20px; }
+    .ContanteRoom .container .SecondSectionContanteRoom .ListFightToDay .FonFight .StatusPlay p {
+      font-size: 18px;
+      line-height: 21px; } }
+@media (max-width: 400px) {
+  .ContanteRoom .container .FirstSectionContanteRoom .rightSection {
+    width: 300px; }
+    .ContanteRoom .container .FirstSectionContanteRoom .rightSection .ListPlayersRoom .player {
+      width: 280px; } }
+@keyframes animateElement {
+  0% {
+    height: 0; }
+  100% {
+    height: 106px; } }
+@keyframes animateElement1 {
+  0% {
+    height: 106px; }
+  50% {
+    height: 53px; }
+  100% {
+    height: 0; } }
+.container .MainTextRating {
+  padding-top: 44px; }
+  .container .MainTextRating p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+    text-align: center;
+    color: #FFFFFF; }
+.container .MainHistoryBlock {
+  display: flex;
+  flex-direction: column;
+  margin-top: 69px; }
+  .container .MainHistoryBlock .ListHistory {
+    display: flex;
+    flex-direction: column; }
+    .container .MainHistoryBlock .ListHistory .slide-content {
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+      background: #292929;
+      padding: 9px 13px 9px 12px;
+      width: 223px;
+      visibility: hidden;
+      height: 0px;
+      overflow: hidden;
+      opacity: 0;
+      animation: animateElement1 linear 0.5s;
+      animation-iteration-count: 1; }
+      .container .MainHistoryBlock .ListHistory .slide-content .piople {
+        display: flex;
+        flex-direction: row;
+        width: 60%; }
+        .container .MainHistoryBlock .ListHistory .slide-content .piople .listPlayer {
+          overflow: hidden;
+          white-space: nowrap;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          width: 75%; }
+          .container .MainHistoryBlock .ListHistory .slide-content .piople .listPlayer p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 127.9%;
+            color: #FFFFFF; }
+    .container .MainHistoryBlock .ListHistory .active1 {
+      animation: animateElement linear 0.5s;
+      animation-iteration-count: 1;
+      visibility: visible;
+      height: 106px;
+      overflow: none;
+      opacity: 1; }
+    .container .MainHistoryBlock .ListHistory .History-block1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 44px; }
+      .container .MainHistoryBlock .ListHistory .History-block1 .phone-position {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #292929;
+        height: 52px;
+        width: 100%;
+        padding: 0px 19.6px 0px 18px; }
+        .container .MainHistoryBlock .ListHistory .History-block1 .phone-position p {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 25px;
+          line-height: 30px;
+          color: #FFFFFF; }
+        .container .MainHistoryBlock .ListHistory .History-block1 .phone-position .btn-drop-menu {
+          cursor: pointer; }
+          .container .MainHistoryBlock .ListHistory .History-block1 .phone-position .btn-drop-menu img {
+            cursor: pointer; }
+      .container .MainHistoryBlock .ListHistory .History-block1 .piople1 {
+        display: none;
+        flex-direction: row;
+        margin-left: 15px; }
+  .container .MainHistoryBlock .HeaderText {
+    display: flex;
+    flex-direction: row; }
+    .container .MainHistoryBlock .HeaderText .Text {
+      border-bottom: 1px solid #fff; }
+      .container .MainHistoryBlock .HeaderText .Text p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+        color: #FFFFFF; }
+.container .MainBlock {
+  display: flex;
+  flex-direction: row;
+  margin: 44px auto 0px auto;
+  filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.25)); }
+  .container .MainBlock .Video {
+    height: 400px;
+    width: 50%; }
+  .container .MainBlock .RatingList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 400px;
+    background-color: #292929;
+    padding: 13px 21px 36px 21px; }
+    .container .MainBlock .RatingList .HeadingText {
+      display: flex;
+      flex-direction: row; }
+      .container .MainBlock .RatingList .HeadingText p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 46px;
+        color: #FFFFFF; }
+      .container .MainBlock .RatingList .HeadingText img {
+        width: 44px;
+        height: 44px; }
+    .container .MainBlock .RatingList .RatingAllPeople {
+      height: 290px;
+      max-width: 320px;
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+      margin-top: 27px; }
+      .container .MainBlock .RatingList .RatingAllPeople p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 30px;
+        color: #FFFFFF; }
+      .container .MainBlock .RatingList .RatingAllPeople .rating-text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 30px;
+        color: #FFFFFF; }
+        .container .MainBlock .RatingList .RatingAllPeople .rating-text:hover {
+          text-decoration: underline; }
+    .container .MainBlock .RatingList .RatingAllPeople::-webkit-scrollbar {
+      background: #212121;
+      border-radius: 4px;
+      width: 7px; }
+    .container .MainBlock .RatingList .RatingAllPeople::-webkit-scrollbar-thumb {
+      background: #3E3E3E;
+      border-radius: 4px;
+      width: 7px; }
+
+@media (max-width: 992px) {
+  .container .MainTextRating {
+    padding-top: 22px; }
+    .container .MainTextRating p {
+      font-size: 35px;
+      line-height: 45px; }
+  .container .MainHistoryBlock {
+    margin-top: 39px; }
+    .container .MainHistoryBlock .ListHistory .slide-content {
+      display: none; }
+      .container .MainHistoryBlock .ListHistory .slide-content .piople {
+        display: flex;
+        flex-direction: row;
+        width: 60%; }
+        .container .MainHistoryBlock .ListHistory .slide-content .piople .listPlayer {
+          overflow: hidden;
+          white-space: nowrap;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          width: 75%; }
+          .container .MainHistoryBlock .ListHistory .slide-content .piople .listPlayer p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 127.9%;
+            color: #FFFFFF; }
+    .container .MainHistoryBlock .ListHistory .active1 {
+      height: 0px; }
+    .container .MainHistoryBlock .ListHistory .History-block1 {
+      background-color: #292929;
+      flex-direction: row;
+      margin-top: 22px;
+      padding: 6px 19.6px 9px 18px; }
+      .container .MainHistoryBlock .ListHistory .History-block1 .phone-position {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: none;
+        min-height: 76px;
+        padding: 0px 0px 0px 0px; }
+        .container .MainHistoryBlock .ListHistory .History-block1 .phone-position p {
+          font-size: 12px;
+          line-height: 15px; }
+        .container .MainHistoryBlock .ListHistory .History-block1 .phone-position img {
+          width: 13px;
+          height: 13px; }
+        .container .MainHistoryBlock .ListHistory .History-block1 .phone-position .col-players {
+          margin-top: 10px; }
+        .container .MainHistoryBlock .ListHistory .History-block1 .phone-position .literbeer {
+          margin-top: 2px; }
+        .container .MainHistoryBlock .ListHistory .History-block1 .phone-position .btn-drop-menu {
+          display: none; }
+      .container .MainHistoryBlock .ListHistory .History-block1 .piople1 {
+        display: flex; }
+        .container .MainHistoryBlock .ListHistory .History-block1 .piople1 .listPlayer {
+          overflow: hidden;
+          white-space: nowrap;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          height: 100%; }
+          .container .MainHistoryBlock .ListHistory .History-block1 .piople1 .listPlayer p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 19px;
+            display: block;
+            color: #FFFFFF; }
+    .container .MainHistoryBlock .HeaderText {
+      display: flex;
+      flex-direction: row; }
+      .container .MainHistoryBlock .HeaderText img {
+        width: 29px;
+        height: 29px; }
+      .container .MainHistoryBlock .HeaderText .Text {
+        border-bottom: 1px solid #fff; }
+        .container .MainHistoryBlock .HeaderText .Text p {
+          font-size: 20px;
+          line-height: 24px; }
+  .container .MainBlock {
+    margin: 22px auto 0px auto; }
+    .container .MainBlock .Video {
+      display: none; }
+    .container .MainBlock .RatingList {
+      margin: 0 auto;
+      width: 100%; }
+      .container .MainBlock .RatingList .HeadingText p {
+        font-size: 28px;
+        line-height: 36px; } }
+@media (max-width: 576px) {
+  .container .MainBlock .RatingList .HeadingText p {
+    font-size: 20px;
+    line-height: 24px; }
+  .container .MainBlock .RatingList .HeadingText img {
+    width: 24px;
+    height: 24px; } }
+.LeftMenuFon {
+  position: fixed;
+  height: 100%;
+  width: 284px;
+  left: -300px;
+  background-color: #242424;
+  z-index: 100000;
+  -moz-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  transition: all 300ms; }
+  .LeftMenuFon .SortBlockMenu {
+    display: flex;
+    flex-direction: column; }
+    .LeftMenuFon .SortBlockMenu .BlockMenuProfile {
+      height: 64px;
+      width: 100%;
+      background-color: #404040;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px 0px 0px 14px;
+      cursor: pointer; }
+      .LeftMenuFon .SortBlockMenu .BlockMenuProfile .avatar {
+        width: 45px;
+        height: 45px;
+        border-radius: 100px;
+        background-size: cover;
+        display: block;
+        background-position: center; }
+      .LeftMenuFon .SortBlockMenu .BlockMenuProfile p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+        margin-left: 10px; }
+    .LeftMenuFon .SortBlockMenu .BlockMenu {
+      height: 64px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px 0px 0px 14px;
+      cursor: pointer;
+      border-bottom: 1px solid #000000; }
+      .LeftMenuFon .SortBlockMenu .BlockMenu .ImageMenu {
+        height: 38px;
+        width: 38px; }
+      .LeftMenuFon .SortBlockMenu .BlockMenu p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+        margin-left: 10px; }
+
+.MenuActive {
+  left: 0px; }
+
+@media (max-width: 576px) {
+  .LeftMenuFon {
+    width: 240px; } }
+.container .anyProfile {
+  width: 100%;
+  background-color: #262626;
+  min-height: 347px;
+  display: flex;
+  flex-direction: row; }
+  .container .anyProfile .leftSection {
+    padding: 40px 0px 0px 57px;
+    margin-right: 78px; }
+    .container .anyProfile .leftSection .avatar {
+      width: 159px;
+      height: 159px;
+      background-position: center;
+      background-size: cover;
+      border-radius: 100px; }
+  .container .anyProfile .rightSection {
+    padding: 24px 89px 35px 0px; }
+    .container .anyProfile .rightSection .HeaderText p {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 45px;
+      line-height: 55px;
+      color: rgba(255, 255, 255, 0.7); }
+    .container .anyProfile .rightSection .StatsPLayerInAnyProfile {
+      margin-top: 23px; }
+      .container .anyProfile .rightSection .StatsPLayerInAnyProfile .MainText p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 33px;
+        line-height: 36px;
+        letter-spacing: 0.055em;
+        text-decoration-line: underline;
+        color: rgba(255, 255, 255, 0.7); }
+      .container .anyProfile .rightSection .StatsPLayerInAnyProfile .Stats p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 9px; }
+        .container .anyProfile .rightSection .StatsPLayerInAnyProfile .Stats p:first-child {
+          margin-top: 13px; }
+
+@media (max-width: 992px) {
+  .container .anyProfile {
+    flex-direction: column;
+    padding-bottom: 20px; }
+    .container .anyProfile .leftSection {
+      padding: 0;
+      margin-right: 0px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .container .anyProfile .rightSection {
+      margin-top: 20px;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .container .anyProfile .rightSection .HeaderText p {
+        font-size: 20px;
+        line-height: 24px; }
+      .container .anyProfile .rightSection .StatsPLayerInAnyProfile .Stats p {
+        text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */
